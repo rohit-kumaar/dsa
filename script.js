@@ -6,3 +6,4 @@ function script(url) {
   head.appendChild(script);
 }
 
+script("./data_structures/01_array.js");
