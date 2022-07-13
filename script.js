@@ -8,4 +8,5 @@ function script(url) {
 
 // script("./01_by_codevolution/01_array.js");
 // script("./01_by_codevolution/07_stack.js");
-script("./01_by_codevolution/08_queue.js");
+// script("./01_by_codevolution/08_queue.js");
+script("./01_by_codevolution/09_queue_optimised.js");
