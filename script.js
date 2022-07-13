@@ -7,4 +7,4 @@ function script(url) {
 }
 
 // script("./01_by_codevolution/01_array.js");
-script("./01_by_codevolution/07_stack_implementation.js");
+script("./01_by_codevolution/07_stack.js");
