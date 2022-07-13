@@ -6,5 +6,5 @@ function script(url) {
   head.appendChild(script);
 }
 
-// script("./data_structures/01_array.js");
-script("./data_structures/07_stack_implementation.js");
+// script("./01_by_codevolution/01_array.js");
+script("./01_by_codevolution/07_stack_implementation.js");
