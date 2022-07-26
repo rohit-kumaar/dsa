@@ -1,49 +1,44 @@
-/**
- * push(element) - add an element to the top of the stack
- * pop()         - remove the top most element from the stack
- * peek()        - get the value of the top element without removing it
- * isEmpty()     - check if the stack is empty
- * size()        - get the number of element in the stack
- * print()       - visualize the element in the stack
+/*
+Reference :-
+https://www.oreilly.com/library/view/data-structures-and/9781449373931/ch04.html
  */
-
 class Stack {
   constructor() {
     this.items = [];
+    this.top = 0;
   }
 
   push(element) {
-    this.items.push(element);
+    return (this.items[this.top++] = element);
   }
 
   pop() {
-    return this.items.pop();
+    return this.items[--this.top];
   }
 
   peek() {
-    return this.items[this.items.length - 1];
-  }
-
-  isEmpty() {
-    return this.items.length === 0;
+    return this.items[this.top - 1];
   }
 
   size() {
-    return this.items.length;
+    console.log(this.top);
   }
 
   print() {
-    console.log(this.items.toString());
+    console.log(this.items);
   }
 }
 
 const stack = new Stack();
-console.log(stack.isEmpty());
-
-stack.push(20);
-stack.push(10);
-stack.push(30);
-console.log(stack.size());
-stack.print();
-console.log(stack.pop());
-console.log(stack.peek());
+stack.push(5);
+stack.push(6);
+stack.push(7);
+stack.push(8);
+console.log(stack);
+stack.size();
+stack.pop();
+stack.pop();
+console.log(stack);
+stack.push(7);
+stack.push(8);
+console.log("peek", stack.peek());
